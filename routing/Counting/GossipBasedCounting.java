@@ -72,8 +72,7 @@ public class GossipBasedCounting implements RoutingDecisionEngine, NilaiInisiato
     @Override
     public boolean newMessage(Message m) {
         m.addProperty(MSG_COUNT_PROPERTY, nilai());
-        return false;
-//          return false;
+        return true;
     }
 
     @Override
